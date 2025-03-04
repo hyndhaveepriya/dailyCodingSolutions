@@ -6,3 +6,13 @@ SELECT product_id FROM products where low_fats = 'Y' AND recyclable = 'Y';
 #https://leetcode.com/problems/find-customer-referee/description/?envType=study-plan-v2&envId=top-sql-50
 
 SELECT name FROM customer WHERE referee_id != 2 OR referee_id is NULL;
+
+#https://leetcode.com/problems/article-views-i/description/?envType=study-plan-v2&envId=top-sql-50
+
+SELECT DISTINCT author_id as id FROM views where author_id = viewer_id order by
+id 
+
+#https://leetcode.com/problems/invalid-tweets/description/?envType=study-plan-v2&envId=top-sql-50
+
+
+SELECT tweet_id from tweets where LENGTH(content) > 15;
