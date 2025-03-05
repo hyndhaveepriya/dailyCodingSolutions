@@ -1,14 +1,11 @@
-#https://leetcode.com/problems/check-if-number-is-a-sum-of-powers-of-three/description/?envType=daily-question&envId=2025-03-05
+#https://leetcode.com/problems/count-total-number-of-colored-cells/description/?envType=daily-question&envId=2025-03-05
 
 class Solution(object):
-    def checkPowersOfThree(self, n):
+    def coloredCells(self, n):
         """
         :type n: int
-        :rtype: bool
+        :rtype: int
         """
-        while n > 0:
-            if n % 3 == 2:
-                return False
-            n //= 3
-        return True
+        return 1 + 2 * (n - 1) * n
+
         
